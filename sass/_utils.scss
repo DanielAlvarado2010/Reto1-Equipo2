@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'roboto-regular';
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+ }
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,9 +10,10 @@
 }
 body{
     //Fuentes
+    font-family: 'roboto-regular', Arial, Helvetica, sans-serif;
 }
 a{
-
+    text-decoration: none;
 }
 .index-container{
     width: 100%;

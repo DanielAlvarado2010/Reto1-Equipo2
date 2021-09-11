@@ -1,8 +1,21 @@
+@font-face {
+  font-family: 'roboto-regular';
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
 * {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: 'roboto-regular', Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .index-container {
