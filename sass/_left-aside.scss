@@ -2,6 +2,31 @@
     width: 20%;
     height: 100%; //temporal
     border: solid 1px red;
+
+    nav{
+        @include OutlineChecker();
+        height: 30px;
+        display: block;
+
+        .nav-list-left-sidebar-lef{
+            list-style-type: none; /* Remove bullets */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margins */
+        }
+        .crayons-link{
+            color: black;
+        }
+
+        .crayons-link--block{
+            display: flex;
+            align-items: center;
+            padding: 8px;
+        }
+
+        @include a-hover-btn();
+        
+
+    }
 }
 
 .left-aside{

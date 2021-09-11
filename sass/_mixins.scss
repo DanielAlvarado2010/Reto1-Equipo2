@@ -32,6 +32,13 @@
     }
 }
 
+@mixin a-hover-btn {
+    a:hover{
+        background-color: $bg-hover-color;
+        border-radius: 10px;
+    }
+}
+
 @mixin OutlineChecker {
     outline: 1px red dashed;
 }
