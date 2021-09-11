@@ -1,5 +1,40 @@
 .main{
     width: 60%;
     height: 100%; //temporal
-    outline: 1px red dashed;
+    outline: solid 1px red;
+    .main-header{
+        height: 50px;
+        @include displayFlexBox(flex, row, space-between, center, nowrap);
+        outline: solid 1px red;
+        .main-nav{
+            width: 60%;
+            height: 80%;
+            list-style: none;
+            @include displayFlexBox(flex, row, space-between, flex-end, nowrap);
+            .nav-item{
+                position: relative;
+                height: 100%;
+                padding: 10px;
+                border-radius: 10px;
+                @include displayFlexBox(flex, column, center, center, nowrap);
+                transition: all .5s;
+                .item-line{
+                    position: absolute;
+                    visibility: hidden;
+                    width: 0px;
+                    border: 2px solid $terciaryColor; 
+                    bottom: -2px;
+                    transition: all .1s;
+                }
+                &:hover .item-line{
+                    visibility: visible;
+                    width: 80%;
+                }
+                &:hover{
+                    background-color: $terciaryColorTransparent;
+                }
+                // margin: 0px 10px;
+            }
+        }
+    }
 }
