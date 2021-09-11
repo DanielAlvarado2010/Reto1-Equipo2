@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'roboto-regular';
+  font-family: "roboto-regular";
   src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
 
@@ -11,7 +11,12 @@
 }
 
 body {
-  font-family: 'roboto-regular', Arial, Helvetica, sans-serif;
+  font-family: "roboto-regular", Arial, Helvetica, sans-serif;
+  background-color: #efefef;
+}
+
+p {
+  color: #575757;
 }
 
 a {
@@ -61,6 +66,67 @@ header {
   width: 20%;
   height: 100%;
   border: solid 1px red;
+}
+
+.left-aside {
+  outline: 1px red dashed;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: left;
+}
+
+.left-aside a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.left-aside span {
+  color: #3a49df;
+}
+
+.left-aside h2 {
+  margin-bottom: 8px;
+}
+
+.left-aside p {
+  margin-bottom: 16px;
+}
+
+.left-aside div {
+  display: block;
+}
+
+.left-aside .btn {
+  display: inline-block;
+  border-radius: 3px;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  padding: 8px 16px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.left-aside .btn.btn-primary {
+  background-color: #3b49df;
+}
+
+.left-aside .btn.btn-secondary {
+  color: #3b49df;
+}
+
+.left-aside .btn.btn-primary:hover {
+  background-color: #323ebe;
+}
+
+.left-aside .btn.btn-secondary:hover {
+  background-color: rgba(223, 219, 219, 0.774);
 }
 
 .main {
