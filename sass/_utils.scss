@@ -22,7 +22,7 @@ a {
 }
 .index-container {
   width: 100%;
-  height: 100vh; //temporal
+  height: 200vh; //temporal
   @include displayFlexBox(flex, row, center, flex-start, nowrap);
 }
 .sub-container {
