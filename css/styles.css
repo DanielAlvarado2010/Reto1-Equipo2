@@ -151,10 +151,6 @@ header {
   text-align: center;
   color: white;
   width: 100%;
-  -webkit-transition: -webkit-transform 300ms ease;
-  transition: -webkit-transform 300ms ease;
-  transition: transform 300ms ease;
-  transition: transform 300ms ease, -webkit-transform 300ms ease;
   padding: 8px 16px;
   font-size: 20px;
   margin-bottom: 5px;
@@ -190,6 +186,38 @@ header {
 .icon-container svg {
   color: #717171;
   fill: #717171;
+}
+
+.section-populartag {
+  display: block;
+  position: relative;
+}
+
+.section-populartag .popular-tag {
+  display: block;
+  border-radius: 3px;
+  position: relative;
+  text-align: left;
+  color: black;
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.section-populartag .popular-button {
+  text-align: center;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  top: 60%;
+  right: 5px;
+  background-color: #3b49df;
+}
+
+.section-populartag.popular-button:hover {
+  background-color: #323ebe;
 }
 
 .main {
