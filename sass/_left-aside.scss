@@ -93,13 +93,16 @@
         font-size: 16px;
         margin-bottom: 5px;
     }
-
-    .popular-button{
+    .popular-tag:hover + .popular-button{
+        display: block;
+    }
+   
+    .popular-button {
         text-align: center;
         color: white;
         padding: 4px 12px;
         border-radius: 5px;
-        display: block;
+        display: none;
         position: absolute;
         top: 0px;
         right: 5px;
@@ -111,6 +114,8 @@
     .popular-button:hover{
         background-color: #323ebe;
         border-radius: 5px;
+        display: block;
+        opacity: 1;
     }
 }
 
@@ -123,4 +128,13 @@ nav .scroll {
      padding: 2px;
      font-size: 16px;
      font-weight: 900;
+ }
+
+ .bottom-left-sidebar{
+     
+    img{
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+    }
  }
