@@ -3,3 +3,30 @@ footer{
     height: 50px;
     outline: 2px rgb(255, 0, 128) dashed;
 }
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;  
+    p {
+        padding-bottom: 14px;
+    }
+}
+
+.crayons-link {
+    font-weight: bold;
+    color: black;
+}
+
+.description-container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+
+    p{
+        padding-bottom: 20px;
+    }
+}
