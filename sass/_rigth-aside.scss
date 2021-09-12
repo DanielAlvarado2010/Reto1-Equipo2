@@ -4,6 +4,7 @@
     height: auto;
     border: solid 1px red;
 }
+//se le creo shadows
 
 .right-card {
     display: flex;
@@ -14,7 +15,8 @@
     padding: 10px;
     block-size: auto;
     border-radius: 10px;
-    border:1px solid $sextaryColor;
+    box-shadow: 0 0 0 1px $shadowsideColor;
+
 
     img {
         width: 100%;
@@ -25,14 +27,16 @@
 
 .right-decoration-text {
     color:$quinaryColor;
-    
+    margin-top: 8px;
 }
 
 .right-listing {
-    background-color: $secundaryColor;
+    background-color: $upperBoxColor;
     color: $cuaternaryColor;
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 10px;
+    box-shadow: 0 0 0 1px $shadowsideColor;
+   
 }
 
 .right-listing-header {
@@ -54,11 +58,11 @@
     color: black;
     padding: 16px 16px;
     text-decoration: none;
-    border-bottom: 00.5px solid $primaryColor;
+    border-bottom: 0.5px solid $primaryColor;
   
     &:hover {
         
-        background-color: $sextaryColor;
+        background-color: $secundaryColor;
     }
 
     p {
@@ -79,10 +83,12 @@
 }
 
 .right-news {
-    background-color: $secundaryColor;
+    background-color: $upperBoxColor;
     color: $cuaternaryColor;
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 10px;
+    box-shadow: 0 0 0 1px $shadowsideColor;
+
 }
 
 .right-news-header {
@@ -90,6 +96,7 @@
     padding: 16px 16px;
     border-bottom: 0.5px solid $primaryColor;
     box-sizing: border-box;
+    color: $cuaternaryColor;
 }
 
 .right-span-define {
