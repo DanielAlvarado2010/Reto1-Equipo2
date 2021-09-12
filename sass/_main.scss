@@ -1,7 +1,6 @@
 .main {
   width: 60%;
-  height: 100%; //temporal
-  // outline: solid 1px red;
+  height: auto; //temporal
   .main-header {
     height: 50px;
     @include displayFlexBox(flex, row, space-between, center, nowrap);
