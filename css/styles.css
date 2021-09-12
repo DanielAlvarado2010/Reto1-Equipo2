@@ -205,24 +205,54 @@ header {
   margin-bottom: 5px;
 }
 
+.section-populartag .popular-tag:hover + .popular-button {
+  display: block;
+}
+
 .section-populartag .popular-button {
   text-align: center;
   color: white;
-  padding: 8px 16px;
-  border-radius: 10px;
-  display: block;
+  padding: 4px 12px;
+  border-radius: 5px;
+  display: none;
   position: absolute;
-  top: 60%;
+  top: 0px;
   right: 5px;
   background-color: #3b49df;
+  margin-top: 3px;
+  margin-bottom: 3px;
 }
 
-.section-populartag.popular-button:hover {
+.section-populartag .popular-button:hover {
   background-color: #323ebe;
+  border-radius: 5px;
+  display: block;
+  opacity: 1;
+}
+
+nav .scroll {
+  overflow-y: auto;
+  max-height: 42vh;
+}
+
+h3 {
+  padding: 2px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.bottom-left-sidebar img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
 }
 
 .main {
   width: 60%;
+<<<<<<< HEAD
+  height: 200%;
+  outline: 1px red dashed;
+=======
   height: auto;
 }
 
@@ -582,6 +612,7 @@ header {
 .main .main-post .big-card .post-img img {
   width: 100%;
   height: 100%;
+>>>>>>> b500f47542a03aeb5f1bc207960f628bc5cbca69
 }
 
 .right-aside-wrapper {
@@ -597,6 +628,18 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 100px;
+  margin-top: 500px;
+}
+
+@media only screen and (max-width: 767px) {
+  .left-aside-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .right-aside-wrapper {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
