@@ -78,16 +78,6 @@
     }
 }
 
-.popular-tags-container{
-    
-    .popular-tags{
-
-
-        a{
-            
-        }
-    }
-}
 
 .section-populartag{
 
@@ -99,7 +89,6 @@
         position: relative;
         text-align: left;
         color: black;
-        // width: 60%;
         padding: 8px 16px;
         font-size: 16px;
         margin-bottom: 5px;
@@ -108,17 +97,30 @@
     .popular-button{
         text-align: center;
         color: white;
-        padding: 8px 16px;
-        border-radius: 10px;
+        padding: 4px 12px;
+        border-radius: 5px;
         display: block;
         position: absolute;
-        top: 60%;
+        top: 0px;
         right: 5px;
-        background-color: $quinaryColor
-        
+        background-color: $quinaryColor;
+        margin-top: 3px;
+        margin-bottom: 3px;   
         
     }
-    &.popular-button:hover{
+    .popular-button:hover{
         background-color: #323ebe;
+        border-radius: 5px;
     }
 }
+
+nav .scroll {
+    overflow-y: auto;
+    max-height: 42vh;
+ }
+
+ h3{
+     padding: 2px;
+     font-size: 16px;
+     font-weight: 900;
+ }
