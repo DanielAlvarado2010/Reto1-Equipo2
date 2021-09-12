@@ -1,40 +1,183 @@
-.main{
-    width: 60%;
-    height: 100%; //temporal
-    outline: solid 1px red;
-    .main-header{
-        height: 50px;
-        @include displayFlexBox(flex, row, space-between, center, nowrap);
-        outline: solid 1px red;
-        .main-nav{
-            width: 60%;
-            height: 80%;
-            list-style: none;
-            @include displayFlexBox(flex, row, space-between, flex-end, nowrap);
-            .nav-item{
-                position: relative;
-                height: 100%;
-                padding: 10px;
-                border-radius: 10px;
-                @include displayFlexBox(flex, column, center, center, nowrap);
-                transition: all .5s;
-                .item-line{
-                    position: absolute;
-                    visibility: hidden;
-                    width: 0px;
-                    border: 2px solid $terciaryColor; 
-                    bottom: -2px;
-                    transition: all .1s;
-                }
-                &:hover .item-line{
-                    visibility: visible;
-                    width: 80%;
-                }
-                &:hover{
-                    background-color: $terciaryColorTransparent;
-                }
-                // margin: 0px 10px;
-            }
-        }
+.main {
+  width: 60%;
+  height: 100%; //temporal
+  // outline: solid 1px red;
+  .main-header {
+    height: 50px;
+    @include displayFlexBox(flex, row, space-between, center, nowrap);
+    .main-title {
+      font-size: 1.3em;
     }
+    .main-nav {
+      width: 60%;
+      height: 80%;
+      list-style: none;
+
+      @include displayFlexBox(flex, row, space-between, flex-end, nowrap);
+      .nav-item {
+        // outline: solid 1px red;
+        position: relative;
+        height: 100%;
+        padding: 8px;
+        border-radius: 10px;
+        @include displayFlexBox(flex, column, center, center, nowrap);
+        transition: all 0.5s;
+        .item-link {
+          font-size: 1.1em;
+          color: $cuaternaryColor;
+          transition: all 0.2s;
+        }
+        .item-line {
+          position: absolute;
+          visibility: hidden;
+          width: 0px;
+          border: 2px solid $terciaryColor;
+          bottom: -2px;
+          transition: all 0.1s;
+        }
+        &:hover .item-line {
+          visibility: visible;
+          width: 80%;
+        }
+        &:hover .item-link {
+          color: $terciaryColor;
+        }
+        &:hover {
+          background-color: $terciaryColorTransparent;
+        }
+      }
+    }
+    .select {
+      display: none;
+    }
+  }
+
+  .main-post {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    .post-card {
+      width: 100%;
+      height: auto;
+      min-height: 200px;
+      margin: 10px 0px;
+      border-radius: 5px;
+      border: solid 1px $borderColor;
+      background-color: $secundaryColor;
+      .post-img {
+        display: none;
+      }
+      .post-content {
+        height: auto;
+        padding: 10px 15px;
+        .post-perfil {
+          @include displayFlexBox(flex, row, flex-start, center, nowrap);
+          .perfil-img {
+            width: 32px;
+            img {
+              width: 100%;
+            }
+          }
+          .perfil-text {
+            margin-left: 5px;
+            .name {
+              font-size: $smallText;
+            }
+            .date {
+              margin-top: 5px;
+              color: $pTextColor;
+              font-size: $xsmallText;
+            }
+          }
+        }
+        .post {
+          padding: 10px 10px 10px 30px;
+          .post-title {
+            font-size: $titleText;
+            color: $cuaternaryColor;
+            transition: 0.2s;
+            &:hover {
+              color: $quinaryColor;
+            }
+          }
+
+          .tags {
+            margin: 10px 0px;
+            @include displayFlexBox(flex, row, flex-start, center, nowrap);
+            .tag {
+              font-size: $xsmallText;
+              padding: 4px;
+              border-radius: 5px;
+              margin: 0px 3px;
+              color: $pTextColor;
+              transition: all 0.3s;
+              &:hover {
+                color: $cuaternaryColor;
+              }
+            }
+          }
+          .post-footer {
+            @include displayFlexBox(flex, row, space-between, center, nowrap);
+            .interactions {
+              @include displayFlexBox(flex, row, center, center, nowrap);
+              .reactions {
+                padding: 3px;
+                margin-right: 5px;
+                font-size: $smallText;
+                border-radius: 5px;
+                background-color: transparent;
+                transition: 0.5s;
+                @include displayFlexBox(flex, row, center, center, nowrap);
+                &:hover {
+                  background-color: $transparent;
+                }
+              }
+              .comments {
+                padding: 3px;
+                margin-right: 5px;
+                font-size: $smallText;
+                border-radius: 5px;
+                background-color: transparent;
+                transition: 0.5s;
+                @include displayFlexBox(flex, row, center, center, nowrap);
+                &:hover {
+                  background-color: $transparent;
+                }
+              }
+            }
+            .save {
+              @include displayFlexBox(flex, row, center, center, nowrap);
+              .save-text {
+                margin-right:5px;
+                font-size: $smallText;
+              }
+              .btn-save{
+                padding: 5px;
+                margin-right: 5px;
+                font-size: $smallText;
+                border-radius: 5px;
+                border: none;
+                background-color: $transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+    .big-card {
+      height: auto;
+      min-height: 450px;
+      .post-img {
+        display: block;
+        height: 250px;
+        border-radius: 5px;
+        overflow: hidden;
+        // border: solid 1px blue;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
 }

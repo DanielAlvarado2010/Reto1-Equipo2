@@ -1,8 +1,27 @@
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
 * {
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: "roboto-regular", Arial, Helvetica, sans-serif;
+  background-color: #efefef;
+}
+
+p {
+  color: #575757;
+}
+
+a {
+  width: auto;
+  text-decoration: none;
 }
 
 .index-container {
@@ -50,10 +69,70 @@ header {
   border: solid 1px red;
 }
 
+.left-aside {
+  outline: 1px red dashed;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: left;
+}
+
+.left-aside a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.left-aside span {
+  color: #3a49df;
+}
+
+.left-aside h2 {
+  margin-bottom: 8px;
+}
+
+.left-aside p {
+  margin-bottom: 16px;
+}
+
+.left-aside div {
+  display: block;
+}
+
+.left-aside .btn {
+  display: inline-block;
+  border-radius: 3px;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+  padding: 8px 16px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.left-aside .btn.btn-primary {
+  background-color: #3b49df;
+}
+
+.left-aside .btn.btn-secondary {
+  color: #3b49df;
+}
+
+.left-aside .btn.btn-primary:hover {
+  background-color: #323ebe;
+}
+
+.left-aside .btn.btn-secondary:hover {
+  background-color: rgba(223, 219, 219, 0.774);
+}
+
 .main {
   width: 60%;
   height: 100%;
-  outline: solid 1px red;
 }
 
 .main .main-header {
@@ -73,7 +152,10 @@ header {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  outline: solid 1px red;
+}
+
+.main .main-header .main-title {
+  font-size: 1.3em;
 }
 
 .main .main-header .main-nav {
@@ -100,7 +182,7 @@ header {
 .main .main-header .main-nav .nav-item {
   position: relative;
   height: 100%;
-  padding: 10px;
+  padding: 8px;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,8 +199,15 @@ header {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main .main-header .main-nav .nav-item .item-link {
+  font-size: 1.1em;
+  color: #090909;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .main .main-header .main-nav .nav-item .item-line {
@@ -127,8 +216,8 @@ header {
   width: 0px;
   border: 2px solid #4d72de;
   bottom: -2px;
-  -webkit-transition: all .1s;
-  transition: all .1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .main .main-header .main-nav .nav-item:hover .item-line {
@@ -136,8 +225,272 @@ header {
   width: 80%;
 }
 
+.main .main-header .main-nav .nav-item:hover .item-link {
+  color: #4d72de;
+}
+
 .main .main-header .main-nav .nav-item:hover {
   background-color: #4d71de1c;
+}
+
+.main .main-header .select {
+  display: none;
+}
+
+.main .main-post {
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.main .main-post .post-card {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: solid 1px #b1b1b1;
+  background-color: #ffffff;
+}
+
+.main .main-post .post-card .post-img {
+  display: none;
+}
+
+.main .main-post .post-card .post-content {
+  height: auto;
+  padding: 10px 15px;
+}
+
+.main .main-post .post-card .post-content .post-perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.main .main-post .post-card .post-content .post-perfil .perfil-img {
+  width: 32px;
+}
+
+.main .main-post .post-card .post-content .post-perfil .perfil-img img {
+  width: 100%;
+}
+
+.main .main-post .post-card .post-content .post-perfil .perfil-text {
+  margin-left: 5px;
+}
+
+.main .main-post .post-card .post-content .post-perfil .perfil-text .name {
+  font-size: 0.9em;
+}
+
+.main .main-post .post-card .post-content .post-perfil .perfil-text .date {
+  margin-top: 5px;
+  color: #575757;
+  font-size: 0.7em;
+}
+
+.main .main-post .post-card .post-content .post {
+  padding: 10px 10px 10px 30px;
+}
+
+.main .main-post .post-card .post-content .post .post-title {
+  font-size: 2em;
+  color: #090909;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.main .main-post .post-card .post-content .post .post-title:hover {
+  color: #3b49df;
+}
+
+.main .main-post .post-card .post-content .post .tags {
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.main .main-post .post-card .post-content .post .tags .tag {
+  font-size: 0.7em;
+  padding: 4px;
+  border-radius: 5px;
+  margin: 0px 3px;
+  color: #575757;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.main .main-post .post-card .post-content .post .tags .tag:hover {
+  color: #090909;
+}
+
+.main .main-post .post-card .post-content .post .post-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.main .main-post .post-card .post-content .post .post-footer .interactions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.main .main-post .post-card .post-content .post .post-footer .interactions .reactions {
+  padding: 3px;
+  margin-right: 5px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.main .main-post .post-card .post-content .post .post-footer .interactions .reactions:hover {
+  background-color: rgba(223, 219, 219, 0.774);
+}
+
+.main .main-post .post-card .post-content .post .post-footer .interactions .comments {
+  padding: 3px;
+  margin-right: 5px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  background-color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.main .main-post .post-card .post-content .post .post-footer .interactions .comments:hover {
+  background-color: rgba(223, 219, 219, 0.774);
+}
+
+.main .main-post .post-card .post-content .post .post-footer .save {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.main .main-post .post-card .post-content .post .post-footer .save .save-text {
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+
+.main .main-post .post-card .post-content .post .post-footer .save .btn-save {
+  padding: 5px;
+  margin-right: 5px;
+  font-size: 0.9em;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(223, 219, 219, 0.774);
+}
+
+.main .main-post .big-card {
+  height: auto;
+  min-height: 450px;
+}
+
+.main .main-post .big-card .post-img {
+  display: block;
+  height: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.main .main-post .big-card .post-img img {
+  width: 100%;
+  height: 100%;
 }
 
 .right-aside-wrapper {
