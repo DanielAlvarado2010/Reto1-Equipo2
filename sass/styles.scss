@@ -1,10 +1,8 @@
-@import "./config"; //Variables
+@import "./utils"; //Variables
+@import "./config"; //Globales
 @import "./mixins"; //Mixins
-@import "./utils"; //Globales
 @import "./navabar";
 @import "./left-aside";
 @import "./main";
 @import "./rigth-aside";
 @import "./footer";
-@import "./responsive/tablet";
-@import "./responsive/mobile";
