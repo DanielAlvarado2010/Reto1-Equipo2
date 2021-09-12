@@ -1,15 +1,14 @@
 footer{
     width: 100%;
-    height: 50px;
-    outline: 2px rgb(255, 0, 128) dashed;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d6d6d7;
 }
 
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 20px;  
+.footer-container {    
+    padding-bottom: 20px;
     p {
         padding-bottom: 14px;
     }
