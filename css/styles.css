@@ -26,7 +26,7 @@ a {
 
 .index-container {
   width: 100%;
-  height: 200vh;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,8 +67,127 @@ a {
 
 header {
   width: 100%;
-  height: 50px;
+  height: 45px;
   outline: 2px blue dashed;
+}
+
+header div a {
+  text-decoration: none;
+}
+
+.flex-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: 0;
+      -ms-flex-pack: 0;
+          justify-content: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 10px;
+}
+
+.img-logodev {
+  height: 35px;
+  margin: 0 0.7em;
+}
+
+.searchbar {
+  border-radius: 5px;
+  height: 2.4em;
+  width: 48%;
+  border: 1px solid #8a8686;
+  position: relative;
+  padding: 5px;
+}
+
+.buscador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.lupa {
+  height: auto;
+  border: none;
+  z-index: 20;
+  position: absolute;
+  top: 4px;
+  left: 305px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 3px;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 8px 16px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.btn.btn-primary {
+  background-color: #3b49df;
+}
+
+.btn.btn-secondary {
+  color: #3b49df;
+}
+
+.btn.btn-primary:hover {
+  background-color: #323ebe;
+}
+
+.btn.btn-secondary:hover {
+  background-color: rgba(223, 219, 219, 0.774);
+}
+
+.button2 {
+  width: 8%;
+  font-weight: bolder;
+  font-size: 12px;
+  padding: 8px 1px;
+  margin: 0 10px;
+}
+
+.button1 {
+  width: 15%;
+  font-weight: 5em;
+  font-size: 12px;
+  padding: 8px 1px;
+  margin: 0 10px;
 }
 
 .left-aside-wrapper {
@@ -633,6 +752,8 @@ h3 {
   padding: 10px;
   block-size: auto;
   border-radius: 10px;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
 .right-card img {
@@ -651,6 +772,8 @@ h3 {
   color: #090909;
   margin-top: 15px;
   border-radius: 10px;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
 .right-listing-header {
@@ -712,6 +835,8 @@ h3 {
   color: #090909;
   margin-top: 15px;
   border-radius: 10px;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
 .right-news-header {
@@ -744,12 +869,50 @@ h3 {
 
 footer {
   width: 100%;
-  height: 50px;
-  outline: 2px #ff0080 dashed;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #d6d6d7;
+}
+
+.footer-container {
+  padding-bottom: 20px;
+}
+
+.footer-container p {
+  padding-bottom: 14px;
+}
+
+.crayons-link {
+  font-weight: bold;
+  color: black;
+}
+
+.description-container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description-container2 p {
+  padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -763,3 +926,13 @@ footer {
     display: none;
   }
 }
+
+@media (max-width: 767px) {
+  .button2 {
+    display: none;
+  }
+  .buscador {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
