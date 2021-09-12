@@ -10,7 +10,7 @@ header{
 }
 .flex-nav {
     width: 100%;
-    @include displayFlexBox(flex, row, 0, center, nowrap)
+    @include displayFlexBox(flex, row, 0, center, nowrap);
     height: 10px;
 }
 
