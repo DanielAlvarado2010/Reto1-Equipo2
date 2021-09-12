@@ -1,5 +1,74 @@
 header{
     width: 100%;
-    height: 50px;
+    height:45px;
     outline: 2px blue dashed;
+    div{
+        a{
+            text-decoration: none;                     
+        }
+    }    
+}
+.flex-nav {
+    width: 100%;
+    @include displayFlexBox(flex, row, 0, center, nowrap)
+    height: 10px;
+}
+
+.img-logodev {
+    height: 35px;
+    margin: 0 0.7em;
+    
+}
+
+.searchbar {
+    border-radius: 5px;
+    height: 2.4em;
+    width: 48%;
+    border: 1px solid rgb(138, 134, 134);
+    position: relative;
+    padding: 5px;
+}
+
+.buscador {
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    position: relative;   
+    width: 100%; 
+}
+
+.lupa {
+    height: auto;
+    border: none;
+    z-index: 20;
+    position: absolute;
+    top: 4px;
+    left: 305px;
+}
+.buttons {
+    display: flex;    
+    width: 100%;  
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  
+
+}
+.btn{
+    @include button();
+}
+
+.button2 {
+    width: 8%;
+    font-weight: bolder;
+    font-size: 12px;  
+    padding: 8px 1px;
+    margin: 0 10px;
+}
+
+.button1 {
+    width: 15%;
+    font-weight: 5em;
+    font-size: 12px;  
+    padding: 8px 1px;
+    margin: 0 10px;
 }
