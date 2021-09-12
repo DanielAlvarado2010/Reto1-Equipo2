@@ -1,5 +1,100 @@
+
 .right-aside-wrapper{
     width: 20%;
     height: 100%; //temporal
     border: solid 1px red;
+}
+
+.right-card {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $secundaryColor;
+    padding: 10px;
+    block-size: auto;
+    border-radius: 10px;
+    border:1px solid $bg-hover-color;
+
+    img {
+    height: 140px;
+    width: 229px;
+    margin-bottom: 10px;
+    overflow-wrap:auto;
+    }
+}
+
+.right-decoration-text {
+    color:$quinaryColor;
+}
+
+.right-listing {
+    background-color: $secundaryColor;
+    color: $cuaternaryColor;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.right-listing-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 16px 16px;
+    border-bottom: 0.5px solid $primaryColor;
+    box-sizing: border-box;
+    
+    a {
+        text-decoration: none;
+        color: $quinaryColor;
+    }
+}
+
+.right-ancore-decorating {
+    display: block;
+    color: black;
+    padding: 16px 16px;
+    text-decoration: none;
+    
+    p {
+        padding: 3px;
+    }
+}
+
+.right-ancore-alter {
+    display: flex;
+    justify-content: center;
+    color: $cuaternaryColor;
+    padding: 16px;
+    border-top: 0.5px solid $primaryColor;
+}
+
+.right-news {
+    background-color: $secundaryColor;
+    color: $cuaternaryColor;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.right-news-header {
+    display: flex;
+    padding: 16px 16px;
+    border-bottom: 0.5px solid $primaryColor;
+    box-sizing: border-box;
+}
+
+.right-span-define {
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+.right-span {
+    background-color: $quinaryColor;
+    border-color: $terciaryColor;
+    color: $secundaryColor;
+    padding: 4px;
+    margin: 4px;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 5px;
+    font-size: 12px;
 }
