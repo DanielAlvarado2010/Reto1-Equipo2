@@ -28,7 +28,7 @@ a {
   @include displayFlexBox(flex, row, center, flex-start, nowrap);
 }
 .sub-container {
-  margin: 5px;
+  margin: 5px 10px;
 }
 .p-15 {
   padding: 15px;
