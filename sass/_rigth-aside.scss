@@ -1,7 +1,7 @@
 
 .right-aside-wrapper{
     width: 20%;
-    height: 100%; //temporal
+    height: auto;
     border: solid 1px red;
 }
 
@@ -10,22 +10,22 @@
     align-content: center;
     flex-direction: column;
     justify-content: center;
-    background-color: $secundaryColor;
+    background-color: $upperBoxColor;
     padding: 10px;
     block-size: auto;
     border-radius: 10px;
-    border:1px solid $bg-hover-color;
+    border:1px solid $sextaryColor;
 
     img {
-    height: 140px;
-    width: 229px;
-    margin-bottom: 10px;
-    overflow-wrap:auto;
+        width: 100%;
+        height: auto;
+        display: inline-block;
     }
 }
 
 .right-decoration-text {
     color:$quinaryColor;
+    
 }
 
 .right-listing {
@@ -54,9 +54,19 @@
     color: black;
     padding: 16px 16px;
     text-decoration: none;
-    
+    border-bottom: 00.5px solid $primaryColor;
+  
+    &:hover {
+        
+        background-color: $sextaryColor;
+    }
+
     p {
         padding: 3px;
+    }
+
+    div:hover {
+        color: $quinaryColor;
     }
 }
 

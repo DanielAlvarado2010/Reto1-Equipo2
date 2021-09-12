@@ -72,7 +72,7 @@ header {
 
 .left-aside-wrapper {
   width: 20%;
-  height: 100%;
+  height: auto;
   border: solid 1px red;
 }
 
@@ -228,7 +228,7 @@ header {
 
 .right-aside-wrapper {
   width: 20%;
-  height: 100%;
+  height: auto;
   border: solid 1px red;
 }
 
@@ -245,18 +245,17 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   padding: 10px;
   block-size: auto;
   border-radius: 10px;
-  border: 1px solid rgba(36, 36, 36, 0.075);
+  border: 1px solid #f0f0f0;
 }
 
 .right-card img {
-  height: 140px;
-  width: 229px;
-  margin-bottom: 10px;
-  overflow-wrap: auto;
+  width: 100%;
+  height: auto;
+  display: inline-block;
 }
 
 .right-decoration-text {
@@ -297,10 +296,19 @@ header {
   color: black;
   padding: 16px 16px;
   text-decoration: none;
+  border-bottom: 0.5px solid #efefef;
+}
+
+.right-ancore-decorating:hover {
+  background-color: #f0f0f0;
 }
 
 .right-ancore-decorating p {
   padding: 3px;
+}
+
+.right-ancore-decorating div:hover {
+  color: #3b49df;
 }
 
 .right-ancore-alter {
