@@ -1,8 +1,23 @@
-@media (max-width:767px) {
+@media (max-width:768px) {
     .button2 {
         display: none;
     }  
     .buscador {
         display: none;
     }
+    .button1 {
+        margin: 10px;
+        width:38%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    
+    .img-logodev {
+        margin-left: 0.4em;
+        padding: 2%;
+        margin-top: 10%;
+    }
+
 }

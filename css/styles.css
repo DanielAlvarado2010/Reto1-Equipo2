@@ -96,7 +96,7 @@ header div a {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  height: 10px;
+  height: 15px;
 }
 
 .img-logodev {
@@ -192,6 +192,26 @@ header div a {
   font-size: 12px;
   padding: 8px 1px;
   margin: 0 10px;
+}
+
+.crayons-icon {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hamburger {
+  border: none;
+  display: none;
+}
+
+.lupa-phone {
+  border: none;
+  display: none;
+}
+
+.searchbarphone {
+  display: none;
 }
 
 .mt-15 {
@@ -935,12 +955,26 @@ footer {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .button2 {
     display: none;
   }
   .buscador {
     display: none;
+  }
+  .button1 {
+    margin: 10px;
+    width: 38%;
+  }
+  .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .img-logodev {
+    margin-left: 0.4em;
+    padding: 2%;
+    margin-top: 10%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
