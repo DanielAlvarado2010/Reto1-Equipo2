@@ -5,10 +5,9 @@
 .left-aside-wrapper{
     width: 20%;
     height: auto;
-    border: solid 1px red;
 
     nav{
-        @include OutlineChecker();
+        // @include OutlineChecker();
         height: auto;
         display: block;
 
@@ -38,7 +37,7 @@
 }
 
 .left-aside{
-    @include OutlineChecker();
+    // @include OutlineChecker();
     background: $upperBoxColor;
     border-radius: 10px;
     padding: 16px;
