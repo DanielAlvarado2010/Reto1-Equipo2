@@ -395,7 +395,7 @@ h3 {
 }
 
 .main .main-header .main-nav {
-  width: 60%;
+  width: auto;
   height: 80%;
   list-style: none;
   display: -webkit-box;
@@ -920,14 +920,39 @@ footer {
   padding-bottom: 20px;
 }
 
-@media only screen and (max-width: 767px) {
-  .left-aside-wrapper {
+@media (max-width: 1023px) {
+  .right-aside-wrapper {
     display: none;
+  }
+  .main {
+    width: 80%;
+  }
+  .main .main-header .main-nav .nav-item .item-link {
+    font-size: 1em;
   }
 }
 
-@media only screen and (max-width: 1023px) {
-  .right-aside-wrapper {
+@media (max-width: 767px) {
+  .left-aside-wrapper {
+    display: none;
+  }
+  .main {
+    width: 100%;
+    border: solid 1px blue;
+  }
+}
+
+@media (max-width: 639px) {
+  .main .main-header .main-nav {
+    display: none;
+  }
+  .main .main-header .select {
+    display: block;
+  }
+  .main .main-post .post-card .post-content .post .post-title {
+    font-size: 1.3em;
+  }
+  .text {
     display: none;
   }
 }

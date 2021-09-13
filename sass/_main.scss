@@ -1,20 +1,20 @@
 .main {
   width: 55%;
   height: auto; //temporal
+  // outline: solid 1px red;
   .main-header {
     height: 50px;
     @include displayFlexBox(flex, row, space-between, center, nowrap);
+    
     .main-title {
       font-size: 1.3em;
     }
     .main-nav {
-      width: 60%;
+      width: auto;
       height: 80%;
       list-style: none;
-
       @include displayFlexBox(flex, row, space-between, flex-end, nowrap);
       .nav-item {
-        // outline: solid 1px red;
         position: relative;
         height: 100%;
         padding: 8px;
