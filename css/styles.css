@@ -75,10 +75,6 @@ header {
   outline: 2px blue dashed;
 }
 
-<<<<<<< HEAD
-.mt-15 {
-  margin-top: 15px;
-=======
 header div a {
   text-decoration: none;
 }
@@ -138,7 +134,7 @@ header div a {
   z-index: 20;
   position: absolute;
   top: 4px;
-  left: 305px;
+  left: 43.5%;
 }
 
 .buttons {
@@ -196,7 +192,10 @@ header div a {
   font-size: 12px;
   padding: 8px 1px;
   margin: 0 10px;
->>>>>>> develop
+}
+
+.mt-15 {
+  margin-top: 15px;
 }
 
 .left-aside-wrapper {
@@ -376,11 +375,7 @@ h3 {
 }
 
 .main {
-<<<<<<< HEAD
-  width: 60%;
-=======
   width: 55%;
->>>>>>> develop
   height: auto;
 }
 
