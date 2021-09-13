@@ -24,7 +24,7 @@
   }
   .main{
     width: 100%;
-    
+
       }
     }
     
@@ -52,5 +52,23 @@
       }
       .text{
         display: none;
+      }
+    }
+
+    @media (min-width: 755px) and (max-width: 1040px) {
+      .button2 {
+        width: 30%;
+      }
+      .button1{
+        width: 50%;
+      }
+      .searchbar {
+        width: 100%;
+      }
+      .buttons {
+        width:50%;
+      }
+      .lupa {
+        left: 91%;
       }
     }

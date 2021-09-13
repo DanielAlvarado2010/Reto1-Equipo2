@@ -187,7 +187,7 @@ header div a {
 .button2 {
   width: 8%;
   font-weight: bolder;
-  font-size: 12px;
+  font-size: 14px;
   padding: 8px 1px;
   margin: 0 10px;
 }
@@ -195,7 +195,7 @@ header div a {
 .button1 {
   width: 15%;
   font-weight: 5em;
-  font-size: 12px;
+  font-size: 14px;
   padding: 8px 1px;
   margin: 0 10px;
 }
@@ -916,6 +916,7 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #d6d6d7;
+  text-align: center;
 }
 
 .footer-container {
@@ -987,7 +988,25 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 755px) and (max-width: 1040px) {
+  .button2 {
+    width: 30%;
+  }
+  .button1 {
+    width: 50%;
+  }
+  .searchbar {
+    width: 100%;
+  }
+  .buttons {
+    width: 50%;
+  }
+  .lupa {
+    left: 91%;
+  }
+}
+
+@media (max-width: 750px) {
   .button2 {
     display: none;
   }
@@ -996,7 +1015,7 @@ footer {
   }
   .button1 {
     margin: 10px;
-    width: 38%;
+    width: 42%;
   }
   .hamburger {
     display: -webkit-box;
@@ -1007,6 +1026,15 @@ footer {
     margin-left: 0.4em;
     padding: 2%;
     margin-top: 10%;
+  }
+  .lupa-phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    top: 10px;
+    left: 55%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
