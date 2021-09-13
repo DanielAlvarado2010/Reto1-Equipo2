@@ -1,0 +1,31 @@
+@media (max-width:750px) {
+    .button2 {
+        display: none;
+    }  
+    .buscador {
+        display: none;
+    }
+    .button1 {
+        margin: 10px;
+        width:42%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    
+    .img-logodev {
+        margin-left: 0.4em;
+        padding: 2%;
+        margin-top: 10%;
+    }
+    
+    .lupa-phone {
+        display: flex;
+        position: absolute;
+        z-index: 5;
+        top: 10px;
+        left: 55%;
+    }
+
+}
