@@ -403,7 +403,7 @@ h3 {
 }
 
 .main .main-header .main-nav {
-  width: 60%;
+  width: auto;
   height: 80%;
   list-style: none;
   display: -webkit-box;
@@ -493,7 +493,6 @@ h3 {
   min-height: 200px;
   margin: 10px 0px;
   border-radius: 5px;
-  border: solid 1px #b1b1b1;
   background-color: #ffffff;
 }
 
@@ -503,7 +502,7 @@ h3 {
 
 .main .main-post .post-card .post-content {
   height: auto;
-  padding: 10px 15px;
+  padding: 15px 15px 10px 15px;
 }
 
 .main .main-post .post-card .post-content .post-perfil {
@@ -526,10 +525,13 @@ h3 {
 
 .main .main-post .post-card .post-content .post-perfil .perfil-img {
   width: 32px;
+  height: 32px;
 }
 
 .main .main-post .post-card .post-content .post-perfil .perfil-img img {
+  border-radius: 50%;
   width: 100%;
+  height: 100%;
 }
 
 .main .main-post .post-card .post-content .post-perfil .perfil-text {
@@ -725,6 +727,10 @@ h3 {
   min-height: 450px;
 }
 
+.main .main-post .big-card .post-content {
+  padding: 10px 15px;
+}
+
 .main .main-post .big-card .post-img {
   display: block;
   height: 250px;
@@ -740,7 +746,6 @@ h3 {
 .right-aside-wrapper {
   width: 25%;
   height: auto;
-  border: solid 1px red;
 }
 
 .right-card {
@@ -760,8 +765,8 @@ h3 {
   padding: 10px;
   block-size: auto;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
 .right-card img {
@@ -780,8 +785,8 @@ h3 {
   color: #090909;
   margin-top: 15px;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
 .right-listing-header {
@@ -843,8 +848,8 @@ h3 {
   color: #090909;
   margin-top: 15px;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
 .right-news-header {
@@ -923,14 +928,39 @@ footer {
   padding-bottom: 20px;
 }
 
-@media only screen and (max-width: 767px) {
-  .left-aside-wrapper {
+@media (max-width: 1023px) {
+  .right-aside-wrapper {
     display: none;
+  }
+  .main {
+    width: 80%;
+  }
+  .main .main-header .main-nav .nav-item .item-link {
+    font-size: 1em;
   }
 }
 
-@media only screen and (max-width: 1023px) {
-  .right-aside-wrapper {
+@media (max-width: 767px) {
+  .left-aside-wrapper {
+    display: none;
+  }
+  .main {
+    width: 100%;
+    border: solid 1px blue;
+  }
+}
+
+@media (max-width: 639px) {
+  .main .main-header .main-nav {
+    display: none;
+  }
+  .main .main-header .select {
+    display: block;
+  }
+  .main .main-post .post-card .post-content .post .post-title {
+    font-size: 1.3em;
+  }
+  .text {
     display: none;
   }
 }
