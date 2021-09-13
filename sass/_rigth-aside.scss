@@ -1,5 +1,117 @@
+
 .right-aside-wrapper{
-    width: 20%;
-    height: 100%; //temporal
+    width: 25%;
+    height: auto;
     border: solid 1px red;
+}
+//se le creo shadows
+
+.right-card {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $upperBoxColor;
+    padding: 10px;
+    block-size: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px $shadowsideColor;
+
+
+    img {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+}
+
+.right-decoration-text {
+    color:$quinaryColor;
+    margin-top: 8px;
+}
+
+.right-listing {
+    background-color: $upperBoxColor;
+    color: $cuaternaryColor;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px $shadowsideColor;
+   
+}
+
+.right-listing-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 16px 16px;
+    border-bottom: 0.5px solid $primaryColor;
+    box-sizing: border-box;
+    
+    a {
+        text-decoration: none;
+        color: $quinaryColor;
+    }
+}
+
+.right-ancore-decorating {
+    display: block;
+    color: black;
+    padding: 16px 16px;
+    text-decoration: none;
+    border-bottom: 0.5px solid $primaryColor;
+  
+    &:hover {
+        
+        background-color: $secundaryColor;
+    }
+
+    p {
+        padding: 3px;
+    }
+
+    div:hover {
+        color: $quinaryColor;
+    }
+}
+
+.right-ancore-alter {
+    display: flex;
+    justify-content: center;
+    color: $cuaternaryColor;
+    padding: 16px;
+    border-top: 0.5px solid $primaryColor;
+}
+
+.right-news {
+    background-color: $upperBoxColor;
+    color: $cuaternaryColor;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px $shadowsideColor;
+
+}
+
+.right-news-header {
+    display: flex;
+    padding: 16px 16px;
+    border-bottom: 0.5px solid $primaryColor;
+    box-sizing: border-box;
+    color: $cuaternaryColor;
+}
+
+.right-span-define {
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+.right-span {
+    background-color: $quinaryColor;
+    border-color: $terciaryColor;
+    color: $secundaryColor;
+    padding: 4px;
+    margin: 4px;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 5px;
+    font-size: 12px;
 }
