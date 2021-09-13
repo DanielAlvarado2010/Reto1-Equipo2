@@ -2,7 +2,6 @@
 .right-aside-wrapper{
     width: 25%;
     height: auto;
-    border: solid 1px red;
 }
 //se le creo shadows
 
@@ -15,7 +14,7 @@
     padding: 10px;
     block-size: auto;
     border-radius: 10px;
-    box-shadow: 0 0 0 1px $shadowsideColor;
+    box-shadow: 0 0 0 1px $shadowBoxColor;
 
 
     img {
@@ -35,7 +34,7 @@
     color: $cuaternaryColor;
     margin-top: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 0 1px $shadowsideColor;
+    box-shadow: 0 0 0 1px $shadowBoxColor;
    
 }
 
@@ -87,7 +86,7 @@
     color: $cuaternaryColor;
     margin-top: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 0 1px $shadowsideColor;
+    box-shadow: 0 0 0 1px $shadowBoxColor;
 
 }
 

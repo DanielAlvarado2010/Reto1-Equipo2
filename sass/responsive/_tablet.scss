@@ -1,13 +1,56 @@
-//  responsive left side bar
-@media only screen and (max-width: 767px) {
-    .left-aside-wrapper {
-      display: none;
-    }
-  }
 
 // responsive right side bar
-@media only screen and (max-width: 1023px) {
-    .right-aside-wrapper {
-      display: none;
+@media (max-width: 1023px) {
+  .right-aside-wrapper {
+    display: none;
+  }
+  .main {
+    width: 80%;
+    .main-header{
+      .main-nav{
+        .nav-item{
+          .item-link{
+            font-size: 1em;
+          }
+        }
+      }
     }
   }
+}
+//  responsive left side bar
+@media (max-width: 767px) {
+  .left-aside-wrapper {
+    display: none;
+  }
+  .main{
+    width: 100%;
+    border: solid 1px blue;
+      }
+    }
+    
+    @media (max-width: 639px) {
+      .main{
+        .main-header{
+          .main-nav{
+            display: none;
+          }
+          .select{
+            display: block;
+          }
+        }
+        .main-post{
+          .post-card{
+            .post-content{
+              .post{
+                .post-title{
+                  font-size: $titleSmallText;
+                }
+              }
+            }
+          }
+        }
+      }
+      .text{
+        display: none;
+      }
+    }
