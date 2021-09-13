@@ -65,6 +65,10 @@ a {
   margin-top: 4px;
 }
 
+.mt-15 {
+  margin-top: 15px;
+}
+
 header {
   width: 100%;
   height: 45px;
@@ -130,7 +134,7 @@ header div a {
   z-index: 20;
   position: absolute;
   top: 4px;
-  left: 305px;
+  left: 43.5%;
 }
 
 .buttons {
@@ -188,6 +192,10 @@ header div a {
   font-size: 12px;
   padding: 8px 1px;
   margin: 0 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
 }
 
 .left-aside-wrapper {
